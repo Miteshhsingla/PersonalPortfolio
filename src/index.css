@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
+
+body {
+  background-color: black;
+  /* Set the background color to black */
+  color: white;
+  /* Set the text color to white for better visibility */
+  background-image: url('./bg.svg');
+  background-size: cover;
+  /* Adjust the size of the background image */
+  background-repeat: no-repeat;
+  /* Prevent the background image from repeating */
+  background-position: center center;
+}
+
+.bottom-image {
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  height: 300px;
+  width: auto;
+}
+
+.hero_img {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 100px;
+  margin-right: 200px;
+  z-index: -1
+}
+
+.icon-image {
+  width: 80px;
+  height: auto;
+
+}
+
+
+
+.container {
+  position: relative;
+}
+
+
+.navbar {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  /* Adjust the padding for the navbar */
+
+}
+
+.navbar ul {
+  list-style: none;
+  text-align: right;
+  margin-top: 100px;
+  margin-right: 100px;
+  /* Remove default padding */
+}
+
+
+
+.navbar ul li a {
+  text-decoration: none;
+  font-family: 'Ubuntu', sans-serif;
+  color: rgba(195, 190, 171, 0.6);
+  padding-bottom: 50%;
+
+
+}
+
+
+
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  /* Make hero section fill the container height */
+
+}
+
+.name {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 20px;
+  margin-right: 100px;
+}
+
+.content {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Avantgarde BK BT';
+  font-size: 30px;
+  margin-left: 100px;
+  align-items: flex-start;
+}
+
+.social-media {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  margin-left: 100px;
+
+  p {
+    margin: 0 0 5px;
+  }
+}
+
+.social-media ul {
+  list-style: none;
+  /* Remove bullets */
+  padding: 0;
+}
+
+.social-media li a {
+  text-decoration: none;
+  color: rgba(195, 190, 171, 0.6);
+
+}
