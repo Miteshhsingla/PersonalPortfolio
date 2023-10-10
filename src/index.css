@@ -23,6 +23,7 @@ body {
 .bottom-arrow {
   position: absolute;
   bottom: 0%;
+  margin-bottom: 40px;
   left: 50%;
   transform: translateX(-50%);
   width: auto;
@@ -142,4 +143,21 @@ body {
 .social-image:hover {
   transform: scale(1.2);
   /* Adjust the scale factor for the zoom effect */
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.aboutMeDescription {
+  font-family: 'Avantgarde BK BT';
+  font-size: 24px;
+}
+
+.aboutsection {
+  margin-left: 100px;
+  width: 70%;
 }
