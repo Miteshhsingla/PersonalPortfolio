@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
-@import url();
 
 body {
   background-color: black;
@@ -9,7 +8,8 @@ body {
   background-image: url('./bg.svg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center;
+  overflow-x: hidden;
 }
 
 .container {
