@@ -4,7 +4,6 @@ body {
   background-color: black;
   /* Set the background color to black */
   color: white;
-
   background-image: url('./bg.svg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -12,9 +11,6 @@ body {
   overflow-x: hidden;
 }
 
-.container {
-  position: relative;
-}
 
 .bottom-image {
   position: absolute;
@@ -37,22 +33,21 @@ body {
   align-items: center;
   justify-content: flex-end;
   margin-top: 100px;
-  margin-right: 200px;
   z-index: -1;
   width: 400px;
   height: auto;
 }
 
 .icon-image {
-  width: 80px;
+  width: 100px;
   height: auto;
 
 }
 
-
-
 .container {
   position: relative;
+  overflow-y: hidden;
+  height: 100%;
 }
 
 
@@ -67,30 +62,34 @@ body {
 .navbar ul {
   list-style: none;
   text-align: right;
-  margin-top: 100px;
-  margin-right: 100px;
-  /* Remove default padding */
+  margin-top: 40px;
+  margin-right: 40px;
 }
 
+.navbar ul li {
+  padding-bottom: 10px;
+}
 
 
 .navbar ul li a {
   text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
   font-family: 'Ubuntu', sans-serif;
   color: rgba(195, 190, 171, 0.6);
-  padding-bottom: 50%;
-
 
 }
 
-
+.navbar ul li a:hover {
+  color: rgba(195, 190, 171, 1);
+  cursor: pointer;
+}
 
 .hero-section {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   height: 100vh;
-
+  align-items: center;
 }
 
 .name {
@@ -102,14 +101,19 @@ body {
 }
 
 .content {
-  max-width: 50%;
-  display: flex;
+  max-width: 40%;
+  margin-left: 100px;
+  /*display: flex;
   flex-direction: column;
   justify-content: center;
   font-family: 'Avantgarde BK BT';
   font-size: 30px;
-  margin-left: 100px;
-  align-items: flex-start;
+  align-items: flex-start; */
+}
+
+.heading {
+  font-family: 'Avantgarde BK BT';
+  font-size: 50px;
 }
 
 .social-media {
@@ -138,9 +142,3 @@ body {
   transform: scale(1.2);
   /* Adjust the scale factor for the zoom effect */
 }
-
-/* .social-media li a {
-  text-decoration: none;
-  color: rgba(195, 190, 171, 0.6);
-
-} */

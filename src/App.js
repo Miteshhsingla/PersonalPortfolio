@@ -13,7 +13,6 @@ import Cursor from "./cursor"
 
 
 
-
 const Navbar = () => {
   return (
     <div className="navbar">
@@ -30,7 +29,6 @@ const Navbar = () => {
 const HeroSection = () => {
   return (
     <div className="hero-section">
-
       <div className="content">
         <img src={img} alt="icon" className="icon-image" />
         <p className="name">MITESH SINGLA</p>

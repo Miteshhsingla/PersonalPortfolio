@@ -3,29 +3,6 @@ import AnimatedCursor from "react-animated-cursor"
 
 export default function Cursor() {
     return (
-        // <AnimatedCursor
-        //     color="rgba(255, 255, 255, 1)" // Adjust color and transparency
-        //     innerSize={8}
-        //     outerSize={35}
-        //     innerScale={0.7}
-        //     outerScale={1.7}
-        //     outerAlpha={0}
-        //     outerStyle={{
-        //         mixBlendMode: 'exclusion' // Change blend mode as needed
-        //     }}
-        // />
-        // <AnimatedCursor
-        //     color="rgba(255, 255, 255, 1)"
-        //     innerSize={8}
-        //     outerSize={35}
-        //     innerScale={1}
-        //     outerScale={1.7}
-        //     outerAlpha={0}
-
-        //     outerStyle={{
-        //         mixBlendMode: 'exclusion'
-        //     }}
-        // />
         <AnimatedCursor
             innerSize={12}
             outerSize={40}
