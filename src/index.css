@@ -1,16 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
+@import url();
 
 body {
   background-color: black;
   /* Set the background color to black */
   color: white;
-  /* Set the text color to white for better visibility */
+
   background-image: url('./bg.svg');
   background-size: cover;
-  /* Adjust the size of the background image */
   background-repeat: no-repeat;
-  /* Prevent the background image from repeating */
   background-position: center center;
+}
+
+.container {
+  position: relative;
 }
 
 .bottom-image {
@@ -21,13 +24,23 @@ body {
   width: auto;
 }
 
+.bottom-arrow {
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: auto;
+}
+
 .hero_img {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   margin-top: 100px;
   margin-right: 200px;
-  z-index: -1
+  z-index: -1;
+  width: 400px;
+  height: auto;
 }
 
 .icon-image {
@@ -76,14 +89,15 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100%;
-  /* Make hero section fill the container height */
+  height: 100vh;
 
 }
 
 .name {
   font-family: 'Ubuntu', sans-serif;
-  font-size: 20px;
+  font-size: 18px;
+  letter-spacing: 6px;
+  color: rgba(195, 190, 171, 1);
   margin-right: 100px;
 }
 
@@ -111,12 +125,22 @@ body {
 
 .social-media ul {
   list-style: none;
-  /* Remove bullets */
   padding: 0;
 }
 
-.social-media li a {
+.social-media li {
+  padding-bottom: 20px;
+  transition: transform 5s ease;
+
+}
+
+.social-image:hover {
+  transform: scale(1.2);
+  /* Adjust the scale factor for the zoom effect */
+}
+
+/* .social-media li a {
   text-decoration: none;
   color: rgba(195, 190, 171, 0.6);
 
-}
+} */
