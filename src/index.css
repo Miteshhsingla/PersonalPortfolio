@@ -94,8 +94,8 @@ body {
 
 .content {
   max-width: 40%;
-  margin-left: 100px;
-  margin-top: 120px;
+  margin: auto;
+  /* margin-left: 100px; */
 
   /*display: flex;
   flex-direction: column;
@@ -108,7 +108,7 @@ body {
 .hero_img {
   margin-top: 100px;
   z-index: -1;
-  margin-left: 120px;
+  /* margin-left: 120px; */
   width: 400px;
   height: auto;
 }
