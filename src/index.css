@@ -4,10 +4,7 @@ body {
   background-color: black;
   /* Set the background color to black */
   color: white;
-  background-image: url('./bg.svg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+
   overflow-x: hidden;
 }
 
@@ -37,6 +34,10 @@ body {
 }
 
 .container {
+  background-image: url('./assets/bg.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   position: relative;
   overflow-y: hidden;
   height: 100%;
@@ -154,10 +155,96 @@ body {
 
 .aboutMeDescription {
   font-family: 'Avantgarde BK BT';
-  font-size: 24px;
+  font-size: 2rem;
+  font-weight: 500;
+  box-sizing: border-box;
+  line-height: 120%;
+  text-align: left;
 }
 
 .aboutsection {
-  margin-left: 100px;
-  width: 70%;
+  margin-left: 150px;
+  width: 80%;
+}
+
+.AboutTitle {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 18px;
+  letter-spacing: 3px;
+  color: rgba(195, 190, 171, 1);
+  margin-right: 100px;
+}
+
+.bgImage {
+  position: relative;
+}
+
+.aboutsection {
+  padding-top: 100px;
+}
+
+.svg-image {
+  position: absolute;
+  right: 0%;
+}
+
+@media (max-width: 768px) {
+  .navbar ul {
+    margin-top: 20px;
+    /* Adjust margin for mobile */
+    margin-right: 20px;
+    /* Adjust margin for mobile */
+  }
+
+  .navbar ul li {
+    padding-bottom: 5px;
+    /* Adjust padding for mobile */
+  }
+
+  .content {
+    max-width: 80%;
+    /* Adjust max-width for mobile */
+    margin-left: 20px;
+    /* Adjust margin for mobile */
+    margin-top: 80px;
+    /* Adjust margin for mobile */
+  }
+
+  .hero_img {
+    margin-top: 50px;
+    /* Adjust margin for mobile */
+    margin-left: 80px;
+    /* Adjust margin for mobile */
+    width: 300px;
+    /* Adjust width for mobile */
+  }
+
+  .social-media {
+    margin-left: 20px;
+    /* Adjust margin for mobile */
+  }
+
+  .aboutsection {
+    margin-left: 20px;
+    /* Adjust margin for mobile */
+    width: 80%;
+    /* Adjust width for mobile */
+  }
+
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .social-media ul {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .social-media ul li {
+    padding-right: 16px;
+  }
+
+
 }
