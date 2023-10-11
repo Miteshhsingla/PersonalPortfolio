@@ -30,20 +30,25 @@ const Navbar = () => {
 const HeroSection = ({ scrollToAbout }) => {
   return (
     <div className="hero-section">
+      <div className="icon-image">
+        <img src={img} alt="icon" />
+      </div>
+
       <div className="content">
-        <img src={img} alt="icon" className="icon-image" />
         <p className="name">MITESH SINGLA</p>
-        <h1 className='heading' >Crafting <span style={{ color: 'rgba(195, 190, 171, 1)' }}>Imagination</span> into Digital Experiences.</h1>
+        <p className='heading' >CRAFTING <span style={{ color: 'rgba(195, 190, 171, 1)' }}>IMAGINATION</span> INTO DIGITAL EXPERIENCES.</p>
       </div>
-      <div>
-        <img src={img2} alt="MainImg" className="hero_img" />
+      <div className="hero_img">
+        <img src={img2} alt="MainImg" />
       </div>
-      <div>
-        <img src={bottomImg} alt="design" className="bottom-image" />
+      <div className='div-design'>
+        <img src={bottomImg} alt="design" />
       </div>
       <div>
         <img src={bottomArrow} alt="arrow" className="bottom-arrow" onClick={scrollToAbout} />
       </div>
+      <SocialMedia />
+
     </div>
   );
 };
@@ -79,7 +84,7 @@ const App = () => {
         <Cursor />
         <Navbar />
         <HeroSection scrollToAbout={() => scrollToSection(aboutRef)} />
-        <SocialMedia />
+
       </div>
 
 

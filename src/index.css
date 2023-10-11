@@ -9,10 +9,11 @@ body {
 }
 
 
-.bottom-image {
+
+.div-design {
   position: absolute;
-  bottom: 0%;
-  right: 0%;
+  bottom: 0px;
+  right: 0px;
   height: 300px;
   width: auto;
 }
@@ -27,9 +28,12 @@ body {
 }
 
 
-.icon-image {
-  width: 100px;
+.icon-image img {
+  width: 80px;
   height: auto;
+  position: fixed;
+  top: 10%;
+  left: 1%;
 
 }
 
@@ -80,8 +84,10 @@ body {
 
 .hero-section {
   display: flex;
-  justify-content: flex-start;
+  /* align-items: center; */
+  justify-content: space-evenly;
   height: 100vh;
+  margin-top: auto;
 }
 
 .name {
@@ -89,41 +95,55 @@ body {
   font-size: 18px;
   letter-spacing: 6px;
   color: rgba(195, 190, 171, 1);
-  margin-right: 100px;
+
 }
 
 .content {
-  max-width: 40%;
-  margin: auto;
-  /* margin-left: 100px; */
-
-  /*display: flex;
+  text-align: center;
+  max-width: 50%;
+  top: 29vh;
+  position: absolute;
+  display: flex;
   flex-direction: column;
   justify-content: center;
-  font-family: 'Avantgarde BK BT';
-  font-size: 30px;
-  align-items: flex-start; */
+
 }
 
+
 .hero_img {
-  margin-top: 100px;
+
   z-index: -1;
-  /* margin-left: 120px; */
-  width: 400px;
-  height: auto;
+
+  width: 600px;
+  height: 100%;
+  position: absolute;
+  top: 4vh;
+  opacity: 0.7;
+
+}
+
+.hero_img img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
 }
 
 
 .heading {
   font-family: 'Avantgarde BK BT';
-  font-size: 60px;
+  font-size: 4.5rem;
+  margin: 0px;
+  font-weight: 550;
+
 }
 
 .social-media {
+
   position: fixed;
-  bottom: 10px;
-  left: 10px;
-  margin-left: 100px;
+  top: 70%;
+  left: 2%;
+  padding-left: 10px;
+
 
   p {
     margin: 0 0 5px;
