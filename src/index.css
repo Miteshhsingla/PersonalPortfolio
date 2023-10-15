@@ -1,14 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
 
 body {
-  background-color: black;
-  /* Set the background color to black */
+  background-color: #000000;
   color: white;
-
   overflow-x: hidden;
 }
-
-
 
 .div-design {
   position: absolute;
@@ -16,6 +12,7 @@ body {
   right: 0px;
   height: 300px;
   width: auto;
+  animation: revealimg 2.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .bottom-arrow {
@@ -27,14 +24,31 @@ body {
   width: auto;
 }
 
-
 .icon-image img {
   width: 80px;
   height: auto;
   position: fixed;
-  top: 10%;
+  top: 50px;
   left: 1%;
+  transform-origin: center center;
+  animation: revealimg 2.5s forwards;
+}
 
+@keyframes revealimg {
+  0% {
+    opacity: 0;
+    transform: scale(1.2);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+.icon-image img:hover {
+  transform: scale(1.2)
 }
 
 .container {
@@ -69,6 +83,7 @@ body {
 
 
 .navbar ul li a {
+  animation: revealimg 1s forwards;
   text-decoration: none;
   font-size: 14px;
   font-weight: 500;
@@ -95,6 +110,7 @@ body {
   font-size: 18px;
   letter-spacing: 6px;
   color: rgba(195, 190, 171, 1);
+  animation: reveal 3s cubic-bezier(0.77, 0, 0.175, 1) 0s;
 
 }
 
@@ -106,14 +122,12 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
 }
 
 
 .hero_img {
 
   z-index: -1;
-
   width: 600px;
   height: 100%;
   position: absolute;
@@ -126,6 +140,11 @@ body {
   width: 100%;
   height: 100%;
   opacity: 0.7;
+  transform-origin: center center;
+  /* Set the transform origin to center */
+  /* animation: revealimg 1.5s forwards; */
+  animation: reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0s;
+
 }
 
 
@@ -134,7 +153,18 @@ body {
   font-size: 4.5rem;
   margin: 0px;
   font-weight: 550;
+  animation: reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0s;
 
+}
+
+@keyframes reveal {
+  0% {
+    clip-path: polygon(0% 0%, 0% 100%, 0% 100%, 0% 0%);
+  }
+
+  100% {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
 }
 
 .social-media {
@@ -158,6 +188,8 @@ body {
 .social-media li {
   padding-bottom: 20px;
   transition: transform 5s ease;
+  animation: revealimg 1s forwards;
+
 
 }
 
@@ -175,16 +207,19 @@ body {
 
 .aboutMeDescription {
   font-family: 'Avantgarde BK BT';
-  font-size: 2rem;
+  font-size: 4vh;
   font-weight: 500;
-  box-sizing: border-box;
-  line-height: 120%;
+  margin: 0px;
+  line-height: 130%;
   text-align: left;
+
 }
 
 .aboutsection {
-  margin-left: 150px;
   width: 80%;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
 }
 
 .AboutTitle {
@@ -193,14 +228,27 @@ body {
   letter-spacing: 3px;
   color: rgba(195, 190, 171, 1);
   margin-right: 100px;
+  margin-top: 0px;
 }
 
 .bgImage {
   position: relative;
+
 }
 
-.aboutsection {
-  padding-top: 100px;
+.bgImage img {
+  width: 440px;
+  height: auto;
+
+}
+
+.about-section {
+  background-color: #111018;
+  height: 100vh;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
 }
 
 .svg-image {
@@ -236,6 +284,7 @@ body {
     margin-left: 80px;
     /* Adjust margin for mobile */
     width: 300px;
+
     /* Adjust width for mobile */
   }
 
@@ -267,4 +316,28 @@ body {
   }
 
 
+}
+
+.backtotop {
+  position: sticky;
+  bottom: 20px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: flex-end;
+  /* --offset: 50px;
+  position: sticky;
+  bottom: 20px;
+  margin-right: 10px;
+  right: 100%;
+  margin-top: calc(100vh + var(--offset)); */
+}
+
+.hero-img-container {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-img {
+  max-width: 100%;
+  height: auto;
 }
