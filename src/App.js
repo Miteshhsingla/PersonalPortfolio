@@ -60,7 +60,7 @@
 // export default App;
 
 
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 import './index.css';
 
 import img3 from './assets/scrolltotop.svg';
@@ -72,6 +72,10 @@ import HeroSection from './components/HeroSection';
 import Navbar from './components/Navbar';
 
 const App = () => {
+
+  useEffect(() => {
+    document.title = 'Mitesh Singla'; // Change this to your desired title
+  }, []);
 
   const handleScrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -86,6 +90,7 @@ const App = () => {
   const scrollToSection = (ref) => {
     ref.current.scrollIntoView({ behavior: 'smooth' });
   };
+
 
   return (
     <div>
@@ -109,7 +114,7 @@ const App = () => {
       <div>
         <img src={cup} alt="SVG" className="svg-image" />
       </div>
-      
+
       <div className="backtotop">
         <img src={img3} alt="arrow" onClick={handleScrollToTop} />
       </div>
