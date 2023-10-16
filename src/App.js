@@ -1,4 +1,4 @@
-// import React, { useRef } from 'react';
+// import React, { useRef,useState } from 'react';
 // import './index.css';
 
 // import img3 from './assets/scrolltotop.svg';
@@ -60,7 +60,7 @@
 // export default App;
 
 
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import './index.css';
 
 import img3 from './assets/scrolltotop.svg';
@@ -77,9 +77,32 @@ const App = () => {
     document.title = 'Mitesh Singla'; // Change this to your desired title
   }, []);
 
-  const handleScrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+  const [visible, setVisible] = useState(false)
+
+  const toggleVisible = () => {
+    const scrolled = document.documentElement.scrollTop;
+    if (scrolled > 300) {
+      setVisible(true)
+    }
+    else if (scrolled <= 300) {
+      setVisible(false)
+    }
   };
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+      /* you can also use 'auto' behaviour 
+         in place of 'smooth' */
+    });
+  };
+
+  window.addEventListener('scroll', toggleVisible);
+
+  // const handleScrollToTop = () => {
+  //   window.scrollTo({ top: 0, behavior: 'smooth' });
+  // };
 
   // const projectsRef = useRef(null);
   // const resumeRef = useRef(null);
@@ -116,7 +139,7 @@ const App = () => {
       </div>
 
       <div className="backtotop">
-        <img src={img3} alt="arrow" onClick={handleScrollToTop} />
+        <img src={img3} alt="arrow" onClick={scrollToTop} style={{ display: visible ? 'inline' : 'none' }} />
       </div>
     </div>
 
