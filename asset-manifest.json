@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.14bb301d.css",
-    "main.js": "/static/js/main.26c3f6b5.js",
-    "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
-    "static/media/HeroImg.svg": "/static/media/HeroImg.f3c2b9bd18535536cb46f62407a47e36.svg",
-    "static/media/cup.svg": "/static/media/cup.6089a552b4b8e667daf5dfbb42df75f3.svg",
-    "static/media/bitmoji.svg": "/static/media/bitmoji.17856bec25792c42f78a718e741304c9.svg",
-    "static/media/AboutMeBg.svg": "/static/media/AboutMeBg.728806a9e38ac7ab1c99b211372ef950.svg",
-    "static/media/bg.svg": "/static/media/bg.d15ddfffbde0076def34.svg",
-    "static/media/bottomDesign.svg": "/static/media/bottomDesign.347988a593b4dd743f49ebc2e17d068b.svg",
-    "static/media/ri_instagram-line.svg": "/static/media/ri_instagram-line.7d7bfbabe3808771235c1a7785f177cf.svg",
-    "static/media/ri_twitter-fill.svg": "/static/media/ri_twitter-fill.1104f3aaccffb9ecb59202d86deb4d48.svg",
-    "static/media/ri_github-fill.svg": "/static/media/ri_github-fill.0ed75d651755a57e33de9dc3fc50fdd4.svg",
-    "static/media/scrolltotop.svg": "/static/media/scrolltotop.3bceb1025b83a9953d79d796ad8f1c84.svg",
-    "index.html": "/index.html",
-    "static/media/ri_linkedin-fill.svg": "/static/media/ri_linkedin-fill.f9bce891dc87887d0298c35601b15758.svg",
-    "static/media/bottomArrow.svg": "/static/media/bottomArrow.2c0d26beb30af3e8800be9a0828f8b41.svg",
-    "main.14bb301d.css.map": "/static/css/main.14bb301d.css.map",
-    "main.26c3f6b5.js.map": "/static/js/main.26c3f6b5.js.map",
-    "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
+    "main.css": "/miteshsingla.github.io/static/css/main.817ff470.css",
+    "main.js": "/miteshsingla.github.io/static/js/main.4535a59b.js",
+    "static/js/787.1ed0c42c.chunk.js": "/miteshsingla.github.io/static/js/787.1ed0c42c.chunk.js",
+    "static/media/HeroImg.svg": "/miteshsingla.github.io/static/media/HeroImg.f3c2b9bd18535536cb46f62407a47e36.svg",
+    "static/media/cup.svg": "/miteshsingla.github.io/static/media/cup.6089a552b4b8e667daf5dfbb42df75f3.svg",
+    "static/media/bitmoji.svg": "/miteshsingla.github.io/static/media/bitmoji.17856bec25792c42f78a718e741304c9.svg",
+    "static/media/AboutMeBg.svg": "/miteshsingla.github.io/static/media/AboutMeBg.728806a9e38ac7ab1c99b211372ef950.svg",
+    "static/media/bg.svg": "/miteshsingla.github.io/static/media/bg.d15ddfffbde0076def34.svg",
+    "static/media/bottomDesign.svg": "/miteshsingla.github.io/static/media/bottomDesign.347988a593b4dd743f49ebc2e17d068b.svg",
+    "static/media/ri_instagram-line.svg": "/miteshsingla.github.io/static/media/ri_instagram-line.7d7bfbabe3808771235c1a7785f177cf.svg",
+    "static/media/ri_twitter-fill.svg": "/miteshsingla.github.io/static/media/ri_twitter-fill.1104f3aaccffb9ecb59202d86deb4d48.svg",
+    "static/media/ri_github-fill.svg": "/miteshsingla.github.io/static/media/ri_github-fill.0ed75d651755a57e33de9dc3fc50fdd4.svg",
+    "index.html": "/miteshsingla.github.io/index.html",
+    "static/media/scrolltotop.svg": "/miteshsingla.github.io/static/media/scrolltotop.3bceb1025b83a9953d79d796ad8f1c84.svg",
+    "static/media/ri_linkedin-fill.svg": "/miteshsingla.github.io/static/media/ri_linkedin-fill.f9bce891dc87887d0298c35601b15758.svg",
+    "static/media/bottomArrow.svg": "/miteshsingla.github.io/static/media/bottomArrow.2c0d26beb30af3e8800be9a0828f8b41.svg",
+    "main.817ff470.css.map": "/miteshsingla.github.io/static/css/main.817ff470.css.map",
+    "main.4535a59b.js.map": "/miteshsingla.github.io/static/js/main.4535a59b.js.map",
+    "787.1ed0c42c.chunk.js.map": "/miteshsingla.github.io/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.14bb301d.css",
-    "static/js/main.26c3f6b5.js"
+    "static/css/main.817ff470.css",
+    "static/js/main.4535a59b.js"
   ]
 }
