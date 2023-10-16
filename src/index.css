@@ -92,9 +92,10 @@ body {
 
 }
 
-.navbar ul li a:hover {
+.navbar ul li a.hovered::after {
   color: rgba(195, 190, 171, 1);
   cursor: pointer;
+
 }
 
 .hero-section {
@@ -205,13 +206,53 @@ body {
   margin-top: 100px;
 }
 
-.aboutMeDescription {
+.aboutMeDescription1 {
+  font-family: 'Avantgarde BK BT';
+  font-size: 4vh;
+  font-weight: 500;
+  margin: 0px;
+  line-height: 130%;
+  margin-bottom: 40px;
+  text-align: left;
+
+}
+
+
+.aboutMeDescription1 .tobe {
+  visibility: hidden;
+  background-color: white;
+  color: #000;
+  text-align: center;
+  font-size: 30px;
+
+  position: absolute;
+  z-index: 1;
+}
+
+
+.aboutMeDescription2 {
   font-family: 'Avantgarde BK BT';
   font-size: 4vh;
   font-weight: 500;
   margin: 0px;
   line-height: 130%;
   text-align: left;
+
+}
+
+
+.aboutMeDescription1 .dev:hover {
+  cursor: url('./assets/laptop.svg'), auto;
+
+}
+
+.aboutMeDescription1 .tea:hover {
+  cursor: url('./assets/tea.svg'), auto;
+
+}
+
+.aboutMeDescription1 .degree:hover {
+  cursor: url('./assets/degree.svg'), auto;
 
 }
 

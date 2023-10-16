@@ -131,8 +131,12 @@ const App = () => {
             <img src={AboutMeBg} alt="icon" />
           </div>
           <p className="AboutTitle">ABOUT ME</p>
-          <p className='aboutMeDescription'>I'm<span style={{ color: 'rgba(195, 190, 171, 1)' }}> Mitesh Singla</span>, someone who’s always been interested in design and development. I believe for most of the products, both of these go hand in hand.Because of this enthusiasm towards tech & UX I have come across wide variety of technologies and projects, which I try to update here on this website.</p>
+          <p className='aboutMeDescription1'>Hey there, I'm<span style={{ color: 'rgba(195, 190, 171, 1)' }}> Mitesh</span>,<span className='degree'> an engineer by degree</span>, <span className='dev'>developer</span>, designer and<span className='tea'> tea enthusiast</span>.</p>
+          <p className='aboutMeDescription2'>I'm someone who’s always been interested in design and <span className='text'>development</span>. I believe for most of the products, both of these go hand in hand.Because of this enthusiasm towards tech & UX I have come across wide variety of technologies and projects, which I try to update here on this website.</p>
+
+
         </div>
+
       </section>
       <div>
         <img src={cup} alt="SVG" className="svg-image" />
