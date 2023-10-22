@@ -4,6 +4,7 @@ import '../index.css';
 const Projects = () => {
 
     return (
+
         <div className='projectContainer'>
             
             <div className='title'>

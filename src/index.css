@@ -372,6 +372,9 @@ body {
   justify-content: flex-end;
 }
 
+.backtotop img:hover {
+  transform: scale(1.1);
+}
 
 .hero-img-container {
   display: flex;
@@ -398,17 +401,18 @@ body {
 
 
 .marquee1 div {
-  font-size: 3rem;
+  letter-spacing: 12px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  font-size: 30px;
   font-weight: 500;
-
-  letter-spacing: 14px;
   font-family: 'Ubuntu', sans-serif;
   display: inline-block;
   position: relative;
   top: 15%;
   transform: translateY(-50%);
   /* transform: rotate(4deg); */
-  animation: animate2 20s linear infinite;
+  animation: animate2 30s linear infinite;
 }
 
 .marquee2 {
@@ -434,26 +438,26 @@ body {
 
 
 .marquee2 div {
-  font-size: 3rem;
-  /* margin-top: 10dp;
-  margin-bottom: 10dp; */
-  letter-spacing: 14px;
+  letter-spacing: 12px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  font-size: 30px;
   font-family: 'Ubuntu', sans-serif;
   display: inline-block;
   position: relative;
   top: 15%;
   /* transform: rotate(4deg); */
-  animation: animate 20s linear infinite;
+  animation: animate 30s linear infinite;
 }
 
 
 @keyframes animate {
   0% {
-    transform: translate(100%, 0);
+    transform: translateX(0);
   }
 
   100% {
-    transform: translate(-100%, 0);
+    transform: translateX(-100%);
   }
 }
 
@@ -470,5 +474,13 @@ body {
 .projectContainer .title {
   height: 100vh;
   background-image: url('./assets/Projectbg.svg');
+
+}
+
+
+.test {
+  animation: scale-up linear both;
+  animation-timeline: view(block);
+  animation-range: cover 0% contain 100%;
 
 }

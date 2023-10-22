@@ -3,11 +3,12 @@ import './index.css';
 
 import img3 from './assets/scrolltotop.svg';
 import Cursor from "./components/cursor";
-// import cup from "./assets/cup.svg";
+import cup from "./assets/cup.svg";
 import AboutMeBg from "./assets/AboutMeBg.svg";
 import HeroSection from './components/HeroSection';
 import Projects from './components/Projects';
 import Navbar from './components/Navbar';
+import test from './assets/progothon.png'
 
 const App = () => {
 
@@ -71,6 +72,9 @@ const App = () => {
           <p className='aboutMeDescription1'>Hey there, I'm<span style={{ color: 'rgba(195, 190, 171, 1)' }}> Mitesh</span>,<span className='degree'> an engineer by degree</span>, <span className='dev'>developer</span>, <span className='designer'>designer</span> and<span className='tea'> tea enthusiast</span>.</p>
           <p className='aboutMeDescription2'>I'm someone who’s always been interested in design and <span className='text'>development</span>. I believe for most of the products, both of these go hand in hand.Because of this enthusiasm towards tech & UX I have come across wide variety of technologies and projects, which I try to update here on this website.</p>
         </div>
+        {/* <div>
+          <img src={cup} alt="SVG" className="svg-image" />
+        </div> */}
 
       </section>
       <div className='marquees'>
@@ -83,13 +87,14 @@ const App = () => {
 
       </div>
 
-      {/* <div>
-        <img src={cup} alt="SVG" className="svg-image" />
-      </div> */}
+
+
+      <Projects />
       <div className="backtotop">
         <img src={img3} alt="arrow" onClick={scrollToTop} style={{ display: visible ? 'inline' : 'none' }} />
       </div>
-      <Projects />
+
+
 
     </div>
 
