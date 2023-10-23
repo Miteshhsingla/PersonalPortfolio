@@ -390,6 +390,7 @@ body {
 .marquee1 {
   width: 100vw;
   height: auto;
+  align-content: center;
   background: #989173;
   text-transform: uppercase;
   white-space: nowrap;
@@ -410,9 +411,9 @@ body {
   display: inline-block;
   position: relative;
   top: 15%;
-  transform: translateY(-50%);
+  /* transform: translateY(-50%); */
   /* transform: rotate(4deg); */
-  animation: animate2 30s linear infinite;
+  /* animation: animate2 30s linear infinite; */
 }
 
 .marquee2 {
@@ -447,7 +448,7 @@ body {
   position: relative;
   top: 15%;
   /* transform: rotate(4deg); */
-  animation: animate 30s linear infinite;
+  /* animation: animate 30s linear infinite; */
 }
 
 
