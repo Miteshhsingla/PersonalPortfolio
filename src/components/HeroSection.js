@@ -9,10 +9,12 @@ import github from '../assets/socialMediaIcons/ri_github-fill.svg';
 import instagram from '../assets/socialMediaIcons/ri_instagram-line.svg';
 import linkedin from '../assets/socialMediaIcons/ri_linkedin-fill.svg';
 import twitter from '../assets/socialMediaIcons/ri_twitter-fill.svg';
-
+import Scrollimg from '../assets/download.svg'
 
 
 const HeroSection = ({ scrollToAbout }) => {
+
+
     return (
         <div className="hero-section">
             <div className="icon-image">
@@ -29,6 +31,7 @@ const HeroSection = ({ scrollToAbout }) => {
             <div className='div-design'>
                 <img src={bottomImg} alt="design" />
             </div>
+
             <div>
                 <img src={bottomArrow} alt="arrow" className="bottom-arrow" onClick={scrollToAbout} />
             </div>

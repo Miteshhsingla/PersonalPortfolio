@@ -1,6 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 import './index.css';
 
+import img4 from './assets/a.png';
 import img3 from './assets/scrolltotop.svg';
 import Cursor from "./components/cursor";
 import cup from "./assets/cup.svg";
@@ -11,6 +12,20 @@ import Navbar from './components/Navbar';
 import test from './assets/progothon.png'
 
 const App = () => {
+
+
+
+
+
+  window.onscroll = function () {
+    scrollRotate();
+  };
+
+  function scrollRotate() {
+    let image = document.getElementById("rotate");
+
+    image.style.transform = "rotate(" + window.pageYOffset / 12 + "deg)";
+  }
 
   useEffect(() => {
     document.title = 'Mitesh Singla';
@@ -63,7 +78,11 @@ const App = () => {
       </div>
 
       <section id="about-section" className="about-section" ref={aboutRef}>
+        <div className='planet'>
+          <img src={img4} id='rotate' className='planetimg' alt="planet" />
+        </div>
         <div className="aboutsection">
+
           <div className='bgImage'>
             <img src={AboutMeBg} alt="icon" />
 
@@ -72,8 +91,9 @@ const App = () => {
           <p className='aboutMeDescription1'>Hey there, I'm<span style={{ color: 'rgba(195, 190, 171, 1)' }}> Mitesh</span>,<span className='degree'> an engineer by degree</span>, <span className='dev'>developer</span>, <span className='designer'>designer</span> and<span className='tea'> tea enthusiast</span>.</p>
           <p className='aboutMeDescription2'>I'm someone who’s always been interested in design and <span className='text'>development</span>. I believe for most of the products, both of these go hand in hand.Because of this enthusiasm towards tech & UX I have come across wide variety of technologies and projects, which I try to update here on this website.</p>
         </div>
-        {/* <div>
-          <img src={cup} alt="SVG" className="svg-image" />
+        {/* <div >
+          <img data-aos="fade-up"
+            data-aos-duration="3000" src={cup} alt="SVG" className="svg-image" />
         </div> */}
 
       </section>
@@ -82,14 +102,14 @@ const App = () => {
           <div>PROJECTS  \\  PROJECTS  \\  PROJECTS  \\  PROJECTS  \\  PROJECTS  \\  PROJECTS</div>
         </div>
         <div class="marquee2">
-          <div>UI/UX  <span className='break'>~</span>  PRODUCT DESIGN  <span className='break'>~</span>  VISUALS  <span className='break'>~</span>  UI/UX  <span className='break'>~</span> PRODUCT DESIGN  <span className='break'>~</span>  VISUALS </div>
+          <div>UI/UX  <span className='break'>~</span>  PRODUCT DESIGN  <span className='break'>~</span>  APPLICATION DEVELOPMENT  <span className='break'>~</span>  UI/UX  <span className='break'>~</span> ANDROID  <span className='break'>~</span>  VISUALS </div>
         </div>
 
       </div>
 
-
-
       <Projects />
+
+
       <div className="backtotop">
         <img src={img3} alt="arrow" onClick={scrollToTop} style={{ display: visible ? 'inline' : 'none' }} />
       </div>

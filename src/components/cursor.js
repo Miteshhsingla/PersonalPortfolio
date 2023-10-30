@@ -5,7 +5,7 @@ export default function Cursor() {
     return (
         <AnimatedCursor
             innerSize={12}
-            outerSize={12}
+            outerSize={30}
             color='225, 225, 225'
             outerAlpha={0.2}
             innerScale={0.8}

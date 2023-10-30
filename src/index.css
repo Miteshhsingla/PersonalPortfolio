@@ -6,6 +6,11 @@ body {
   overflow-x: hidden;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
+
 .div-design {
   position: absolute;
   bottom: 0px;
@@ -45,7 +50,6 @@ body {
     transform: scale(1);
   }
 }
-
 
 .icon-image img:hover {
   transform: scale(1.2)
@@ -160,6 +164,14 @@ body {
 
 }
 
+.heading::selection {
+
+  background: rgba(195, 190, 171, 1);
+
+  color: black;
+
+}
+
 @keyframes reveal {
   0% {
     clip-path: polygon(0% 0%, 0% 100%, 0% 100%, 0% 0%);
@@ -209,6 +221,7 @@ body {
 }
 
 .aboutMeDescription1 {
+
   font-family: 'Avantgarde BK BT';
   font-size: 4vh;
   font-weight: 500;
@@ -239,7 +252,6 @@ body {
   margin: 0px;
   line-height: 130%;
   text-align: left;
-
 }
 
 
@@ -264,6 +276,7 @@ body {
 
 .aboutsection {
   width: 80%;
+  position: absolute;
   /* display: flex;
   flex-direction: column;
   justify-content: center; */
@@ -298,6 +311,7 @@ body {
 }
 
 .svg-image {
+  margin-top: 20px;
   position: absolute;
   right: 0%;
 }
@@ -386,6 +400,10 @@ body {
   height: auto;
 }
 
+.marquee1,
+.marquee2 {
+  margin-top: 200px;
+}
 
 .marquee1 {
   width: 100vw;
@@ -411,9 +429,7 @@ body {
   display: inline-block;
   position: relative;
   top: 15%;
-  /* transform: translateY(-50%); */
-  /* transform: rotate(4deg); */
-  /* animation: animate2 30s linear infinite; */
+  animation: animate2 40s linear infinite;
 }
 
 .marquee2 {
@@ -428,8 +444,6 @@ body {
   overflow: hidden;
   position: absolute;
   left: 0;
-  /* Adjust the margin as needed */
-
 }
 
 .marquee2 .break {
@@ -448,7 +462,7 @@ body {
   position: relative;
   top: 15%;
   /* transform: rotate(4deg); */
-  /* animation: animate 30s linear infinite; */
+  animation: animate 30s linear infinite;
 }
 
 
@@ -472,16 +486,222 @@ body {
   }
 }
 
-.projectContainer .title {
+.projectContainer {
+
   height: 100vh;
-  background-image: url('./assets/Projectbg.svg');
 
 }
 
 
-.test {
-  animation: scale-up linear both;
-  animation-timeline: view(block);
-  animation-range: cover 0% contain 100%;
 
+
+.poster2 {
+  padding: 20px;
+  width: 100vw;
+  height: auto;
+}
+
+.project2 {
+  padding-top: 500px;
+
+}
+
+.Text2 {
+  font-size: 7rem;
+  position: absolute;
+  z-index: 1;
+  left: 46%;
+  align-items: center;
+  font-weight: 500;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.planet {
+  position: relative;
+
+}
+
+.planetimg {
+  position: absolute;
+  width: 1000px;
+  height: auto;
+  left: 0%;
+  opacity: 0.6;
+}
+
+.projectContainer {
+  margin-top: 50vh;
+}
+
+.contactContainer {
+  height: 100vh;
+}
+
+
+/* CSS for Chat Interface */
+.chat-interface {
+  position: relative;
+  font-family: Arial, sans-serif;
+}
+
+.contact-button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.chat-box {
+  display: block;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 300px;
+  background-color: white;
+}
+
+.chat-header {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close-button {
+  cursor: pointer;
+}
+
+.chat-options {
+  padding: 10px;
+}
+
+.option {
+  cursor: pointer;
+  list-style: none;
+  margin: 5px 0;
+  color: #007BFF;
+}
+
+.selected-option {
+  padding: 10px;
+  font-weight: bold;
+}
+
+/* CSS for Chat Interface */
+.chat-interface {
+  position: relative;
+  font-family: Arial, sans-serif;
+}
+
+.contact-button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.chat-box {
+  display: block;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 8px;
+  width: 300px;
+  background-color: #fafafa;
+}
+
+.chat-header {
+  background-color: #252525;
+  color: white;
+  padding: 10px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close-button {
+  cursor: pointer;
+}
+
+.chat-messages {
+  padding: 10px;
+}
+
+.message {
+  background-color: #e2e2e2;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  max-width: 80%;
+  word-wrap: break-word;
+}
+
+.message.system {
+  text-align: left;
+  /* Left-align system messages */
+}
+
+.message.user {
+  text-align: right;
+  /* Right-align user messages */
+}
+
+.message.animated {
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: fadeIn 0.5s ease-in-out forwards, slideIn 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-20px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.option {
+  border-radius: 10px;
+  padding: 10px;
+  border: 2px solid #e2e2e2;
+  width: fit-content;
+  cursor: pointer;
+  list-style: none;
+  margin: 5px 0;
+  color: #252525;
+}
+
+.selected {
+  background-color: #e2e2e2;
+  color: #000000;
+}
+
+.user-photo {
+  align-self: start;
+  border-radius: 100px;
+  background: #ffffff;
+  width: 60px;
+  height: auto;
 }
