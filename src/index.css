@@ -540,73 +540,10 @@ body::-webkit-scrollbar {
 
 /* CSS for Chat Interface */
 .chat-interface {
-  position: relative;
-  font-family: Arial, sans-serif;
+  position: absolute;
+  font-family: 'ubuntu', 'sans-serif';
 }
 
-.contact-button {
-  background-color: #007BFF;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-}
-
-.chat-box {
-  display: block;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  width: 300px;
-  background-color: white;
-}
-
-.chat-header {
-  background-color: #007BFF;
-  color: white;
-  padding: 10px;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.close-button {
-  cursor: pointer;
-}
-
-.chat-options {
-  padding: 10px;
-}
-
-.option {
-  cursor: pointer;
-  list-style: none;
-  margin: 5px 0;
-  color: #007BFF;
-}
-
-.selected-option {
-  padding: 10px;
-  font-weight: bold;
-}
-
-/* CSS for Chat Interface */
-.chat-interface {
-  position: relative;
-  font-family: Arial, sans-serif;
-}
-
-.contact-button {
-  background-color: #007BFF;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-}
 
 .chat-box {
   display: block;
@@ -615,7 +552,7 @@ body::-webkit-scrollbar {
   right: 20px;
   border-radius: 8px;
   width: 300px;
-  background-color: #fafafa;
+  background-color: #e2e2e2;
 }
 
 .chat-header {
@@ -638,22 +575,23 @@ body::-webkit-scrollbar {
 }
 
 .message {
-  background-color: #e2e2e2;
   margin: 10px;
   padding: 10px;
-  border-radius: 5px;
   max-width: 80%;
   word-wrap: break-word;
 }
 
 .message.system {
+  background-color: #ffffff;
+  border-radius: 0px 15px 15px 15px;
   text-align: left;
-  /* Left-align system messages */
+  color: #000;
 }
 
 .message.user {
+  background-color: #989173;
+  border-radius: 15px 15px 0px 15px;
   text-align: right;
-  /* Right-align user messages */
 }
 
 .message.animated {
@@ -685,7 +623,7 @@ body::-webkit-scrollbar {
 .option {
   border-radius: 10px;
   padding: 10px;
-  border: 2px solid #e2e2e2;
+  background-color: #C3BEAB;
   width: fit-content;
   cursor: pointer;
   list-style: none;
@@ -694,14 +632,23 @@ body::-webkit-scrollbar {
 }
 
 .selected {
-  background-color: #e2e2e2;
+  background-color: #989173;
   color: #000000;
+  visibility: hidden;
 }
 
 .user-photo {
   align-self: start;
   border-radius: 100px;
   background: #ffffff;
-  width: 60px;
+  width: 50px;
   height: auto;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
