@@ -34,8 +34,8 @@ const Contact = () => {
             setChatMessages([
                 ...chatMessages,
                 { text: 'Hi', isUser: true },
-                { text: 'Hello', isSystem: true },
-                { text: 'I hope you enjoyed surfing my portfolio.', isSystem: true },
+                { text: 'Hello!', isSystem: true },
+                { text: 'I hope you enjoyed exploring my portfolio.', isSystem: true },
                 { text: 'Can i help you with anything else?', isSystem: true }
 
             ]);
@@ -43,9 +43,9 @@ const Contact = () => {
             // Display "Let's connect" message and provide your email
             setChatMessages([
                 ...chatMessages,
-                { text: "Contact Me", isUser: true },
-                { text: "Let's connect", isSystem: true },
-                { text: 'Email: abc@gmail.com', isSystem: true },
+                { text: "Let's connect", isUser: true },
+                { text: 'Sure', isSystem: true },
+                { text: 'Here is my email  miteshhsingla@gmail.com', isSystem: true },
             ]);
         } else if (option === 'Close') {
             // Close the chat interface
