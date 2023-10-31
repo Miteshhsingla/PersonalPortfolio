@@ -183,7 +183,7 @@ body::-webkit-scrollbar {
 }
 
 .social-media {
-
+  z-index: 1;
   position: fixed;
   top: 70%;
   left: 2%;
@@ -465,6 +465,9 @@ body::-webkit-scrollbar {
   animation: animate 30s linear infinite;
 }
 
+.marquees {
+  margin-top: 150px;
+}
 
 @keyframes animate {
   0% {
@@ -486,17 +489,11 @@ body::-webkit-scrollbar {
   }
 }
 
-.projectContainer {
-
-  height: 100vh;
-
-}
 
 
 
 
 .poster2 {
-  padding: 20px;
   width: 100vw;
   height: auto;
 }
@@ -518,14 +515,12 @@ body::-webkit-scrollbar {
 
 .planet {
   position: relative;
-
 }
 
 .planetimg {
   position: absolute;
   width: 1000px;
   height: auto;
-  left: 0%;
   opacity: 0.6;
 }
 
@@ -540,7 +535,8 @@ body::-webkit-scrollbar {
 
 /* CSS for Chat Interface */
 .chat-interface {
-  position: absolute;
+  position: relative;
+  z-index: 1;
   font-family: 'ubuntu', 'sans-serif';
 }
 
@@ -634,7 +630,6 @@ body::-webkit-scrollbar {
 .selected {
   background-color: #989173;
   color: #000000;
-  visibility: hidden;
 }
 
 .user-photo {
@@ -651,4 +646,53 @@ body::-webkit-scrollbar {
   align-items: center;
   justify-content: center;
   gap: 10px;
+}
+
+
+/* Footer css */
+.footer {
+  color: #fff;
+  width: 100vw;
+  height: 14 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'ubuntu', 'sans-serif';
+
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+
+}
+
+.website-icon {
+  margin-right: 10px;
+}
+
+.thank-you {
+  font-size: 24px;
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+}
+
+.footer-right span {
+  margin-right: 10px;
+
+}
+
+.footer-right a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 10px;
+
+}
+
+.footer-right a:hover {
+  text-decoration: underline;
 }

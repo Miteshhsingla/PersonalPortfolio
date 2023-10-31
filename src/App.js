@@ -10,13 +10,10 @@ import HeroSection from './components/HeroSection';
 import Projects from './components/Projects';
 import Navbar from './components/Navbar';
 import test from './assets/progothon.png'
+import Footer from './components/Footercomp';
+
 
 const App = () => {
-
-
-
-
-
   window.onscroll = function () {
     scrollRotate();
   };
@@ -107,9 +104,11 @@ const App = () => {
 
       </div>
 
-      <Projects />
+      {/* <Projects /> */}
+      <div>
+        {/* <Footer /> */}
 
-
+      </div>
       <div className="backtotop">
         <img src={img3} alt="arrow" onClick={scrollToTop} style={{ display: visible ? 'inline' : 'none' }} />
       </div>

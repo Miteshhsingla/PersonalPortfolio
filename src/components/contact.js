@@ -7,7 +7,7 @@ const Contact = () => {
     const [displayHi, setDisplayHi] = useState(false);
     const [selectedOption, setSelectedOption] = useState('');
     const [chatMessages, setChatMessages] = useState([]);
-    const options = ['Say Hi', 'Download Resume', 'Contact Me'];
+    const options = ['Just saying Hi', 'Download Resume', 'Contact Me'];
 
     useEffect(() => {
         if (isOpen && !displayHi) {
@@ -29,11 +29,11 @@ const Contact = () => {
     }, [isOpen, chatMessages, displayHi]);
 
     const handleOptionClick = (option) => {
-        if (option === 'Say Hi') {
+        if (option === 'Just saying Hi') {
             // Display a message from the user's end
             setChatMessages([
                 ...chatMessages,
-                { text: 'Hi', isUser: true },
+                { text: 'Hi!', isUser: true },
                 { text: 'Hello!', isSystem: true },
                 { text: 'I hope you enjoyed exploring my portfolio.', isSystem: true },
                 { text: 'Can i help you with anything else?', isSystem: true }
@@ -47,7 +47,14 @@ const Contact = () => {
                 { text: 'Sure', isSystem: true },
                 { text: 'Here is my email  miteshhsingla@gmail.com', isSystem: true },
             ]);
-        } else if (option === 'Close') {
+        }
+        else if (option === 'Download Resume') {
+            // const link = document.createElement('a');
+            // link.href = resumePDF;
+            // link.download = 'Mitesh_Singla_Resume.pdf';
+            // link.click();
+        }
+        else if (option === 'Close') {
             // Close the chat interface
             setIsOpen(false);
         } else {
