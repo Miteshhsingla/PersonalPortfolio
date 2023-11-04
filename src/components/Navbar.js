@@ -15,7 +15,7 @@ const Navbar = ({ scrollToAbout }) => {
         <div>
             <div className="navbar">
                 <ul>
-                    <li><a id="about" href="#about" onClick={scrollToAbout}>ABOUT</a></li>
+                    <li><a href="#about">ABOUT</a></li>
                     <li><a href="#projects">PROJECTS</a></li>
                     <li><a href="#contact" onClick={toggleChat}>CONTACT</a></li>
                 </ul>

@@ -74,7 +74,7 @@ const App = () => {
 
       </div>
 
-      <section id="about-section" className="about-section" ref={aboutRef}>
+      <section id="about" className="about-section" ref={aboutRef}>
         <div className='planet'>
           <img src={img4} id='rotate' className='planetimg' alt="planet" />
         </div>
@@ -85,7 +85,7 @@ const App = () => {
 
           </div>
           <p className="AboutTitle">ABOUT ME</p>
-          <p className='aboutMeDescription1'>Hey there, I'm<span style={{ color: 'rgba(195, 190, 171, 1)' }}> Mitesh</span>,<span className='degree'> an engineer by degree</span>, <span className='dev'>developer</span>, <span className='designer'>designer</span> and<span className='tea'> tea enthusiast</span>.</p>
+          <p className='aboutMeDescription1'>Hey there, I'm<span style={{ color: '#BB9CFF' }}> Mitesh</span>,<span className='degree'> an engineer by degree</span>, <span className='dev'>developer</span>, <span className='designer'>designer</span> and<span className='tea'> tea enthusiast</span>.</p>
           <p className='aboutMeDescription2'>I'm someone who’s always been interested in design and <span className='text'>development</span>. I believe for most of the products, both of these go hand in hand.Because of this enthusiasm towards tech & UX I have come across wide variety of technologies and projects, which I try to update here on this website.</p>
         </div>
         {/* <div >
@@ -103,12 +103,8 @@ const App = () => {
         </div>
 
       </div>
-
       {/* <Projects /> */}
-      <div>
-        {/* <Footer /> */}
-
-      </div>
+      {/* <Footer /> */}
       <div className="backtotop">
         <img src={img3} alt="arrow" onClick={scrollToTop} style={{ display: visible ? 'inline' : 'none' }} />
       </div>

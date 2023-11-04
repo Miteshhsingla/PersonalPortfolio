@@ -12,14 +12,27 @@ const Projects = () => {
     }, [])
     return (
         <section className='projectContainer'>
-            <div>
-
+            <div className='project-sections'>
+                {/* <img src={Arimacover} alt='arimarides' className='poster2' data-aos="fade-out-up"
+                    data-aos-duration="1000" />
                 <img src={Arimacover} alt='arimarides' className='poster2' data-aos="fade-out-up"
                     data-aos-duration="2000" />
                 <img src={Arimacover} alt='arimarides' className='poster2' data-aos="fade-out-up"
                     data-aos-duration="2000" />
+                <img src={Arimacover} alt='arimarides' className='poster2' data-aos="fade-out-up"
+                    data-aos-duration="2000" />
+                <img src={Arimacover} alt='arimarides' className='poster2' data-aos="fade-out-up"
+                    data-aos-duration="2000" />
+                <img src={Arimacover} alt='arimarides' className='poster2' data-aos="fade-out-up"
+                    data-aos-duration="2000" /> */}
+                <div className='project-section'>
+                    <text>Arima Rides</text>
+                </div>
+                <div className='project-section'>
+                    <text>Arima Rides</text>
+                </div>
             </div>
-        
+
         </section>
 
 

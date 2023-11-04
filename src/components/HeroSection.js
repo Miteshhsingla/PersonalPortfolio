@@ -23,7 +23,7 @@ const HeroSection = ({ scrollToAbout }) => {
 
             <div className="content">
                 <p className="name">MITESH SINGLA</p>
-                <p className='heading' >CRAFTING <span style={{ color: 'rgba(195, 190, 171, 1)' }}>IMAGINATION</span> INTO DIGITAL EXPERIENCES</p>
+                <p className='heading' >CRAFTING <span style={{ color: '#BB9CFF' }}>IMAGINATION</span> INTO DIGITAL EXPERIENCES</p>
             </div>
             <div className="hero_img">
                 <img src={img2} alt="MainImg" />
