@@ -11,6 +11,7 @@ import Projects from './components/Projects';
 import Navbar from './components/Navbar';
 import test from './assets/progothon.png'
 import Footer from './components/Footercomp';
+import ExperienceSection from './components/Experience';
 
 
 const App = () => {
@@ -101,15 +102,16 @@ const App = () => {
         <div class="marquee2">
           <div>UI/UX  <span className='break'>~</span>  PRODUCT DESIGN  <span className='break'>~</span>  APPLICATION DEVELOPMENT  <span className='break'>~</span>  UI/UX  <span className='break'>~</span> ANDROID  <span className='break'>~</span>  VISUALS </div>
         </div>
-
       </div>
+
       {/* <Projects /> */}
       {/* <Footer /> */}
       <div className="backtotop">
         <img src={img3} alt="arrow" onClick={scrollToTop} style={{ display: visible ? 'inline' : 'none' }} />
       </div>
-
-
+      <div>
+        <ExperienceSection />
+      </div>
 
     </div>
 

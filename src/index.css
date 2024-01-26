@@ -171,7 +171,7 @@ body::-webkit-scrollbar {
 
 .heading::selection {
 
-  background: rgba(195, 190, 171, 1);
+  background: #a7baff;
 
   color: black;
 
@@ -471,6 +471,7 @@ body::-webkit-scrollbar {
 }
 
 .marquees {
+  position: relative;
   margin-top: 150px;
 }
 
@@ -713,4 +714,26 @@ body::-webkit-scrollbar {
 .project-section text {
   font-size: 2rem;
   font-family: 'Ubuntu', sans-serif;
+}
+
+.experience-details {
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+}
+
+.company-details {
+  width: 400px;
+  text-wrap: true;
+}
+
+.experience-item {
+  padding: 50px;
+}
+
+.experience-section {
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 300px;
 }
