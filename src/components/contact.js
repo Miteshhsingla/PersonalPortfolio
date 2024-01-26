@@ -19,7 +19,7 @@ const Contact = () => {
                         text: "Hey👋🏽, What's up?",
                         isSystem: true,
                     }, {
-                        text: "I'm Mitesh, and I spend the majority of my time engaged in the design and development of various projects.",
+                        text: "I'm Lakshay, and I am a full stack developer just trying to explore new skills and brushing up skills that i know",
                         isSystem: true,
                     }
                 ]);
@@ -45,7 +45,7 @@ const Contact = () => {
                 ...chatMessages,
                 { text: "Let's connect", isUser: true },
                 { text: 'Sure', isSystem: true },
-                { text: 'Here is my email  miteshhsingla@gmail.com', isSystem: true },
+                { text: 'Here is my email  lakshayarora0612@gmail.com', isSystem: true },
             ]);
         }
         else if (option === 'Download Resume') {
@@ -76,7 +76,7 @@ const Contact = () => {
                                 alt="Your Name"
                                 className="user-photo"
                             />
-                            <text>Mitesh Singla</text>
+                            <text>Lakshay Arora</text>
                         </div>
                         <span className="close-button" onClick={() => handleOptionClick('Close')}>
                             <img

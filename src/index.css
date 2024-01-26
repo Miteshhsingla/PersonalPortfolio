@@ -38,6 +38,79 @@ body::-webkit-scrollbar {
   transform-origin: center center;
   animation: revealimg 2.5s forwards;
 }
+/* Styling for the icon container */
+.icon-circle {
+  display: flex;
+  justify-content: space-between; /* Adjust the spacing between circles */
+  align-items: center;
+  width: 400px; /* Adjust the total width as needed */
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+/* Styling for each individual icon and its circle */
+.icon {
+  width: 80px; /* Adjust the circle size */
+  height: 80px; /* Should be equal to width for a perfect circle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333; /* Background color of the circle */
+  border-radius: 50%; /* Create a circle using border-radius */
+}
+
+/* Styling for the icon itself (centered within the circle) */
+.icon svg {
+  font-size: 32px; /* Adjust the icon size */
+  color: #fff; /* Icon color */
+}
+/* Style for the container that holds all sections */
+.tech-container {
+  max-width: 800px; /* Adjust the container width as needed */
+  /* margin: 0 auto; */
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  /* color: #a7baff; */
+
+}
+
+/* Style for each section */
+.tech-section {
+  /* text-align: center; */
+  margin-bottom: 20px; /* Adjust the spacing between sections */
+  flex: 0 0 calc(33.33% - 20px); /* Adjust the width of each section */
+}
+.iconsdiv{
+  display: flex;
+  gap: 20px;
+}
+
+.iconsdiv h1{
+  width: 90px;
+}
+/* Style for the section heading */
+.tech-section h2 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+/* Style for the icons */
+.tech-icon {
+  font-size: 36px; /* Adjust the icon size */
+  color: #BB9CFF; /* Icon color */
+  /* margin-bottom: 10px; Adjust the spacing between icons and names */
+}
+.icon1{
+  font-size: 36px !important;
+}
+
+/* Style for the names of technologies/tools */
+.tech-name {
+  font-size: 14px;
+  color: #333; /* Text color */
+}
+
 
 @keyframes revealimg {
   0% {
@@ -300,6 +373,18 @@ body::-webkit-scrollbar {
   position: relative;
 }
 
+.about-me {
+  font-size: 4rem; /* Adjust size as necessary */
+  color: transparent; /* Transparent text color */
+  letter-spacing: 0.5px; /* Customizable */
+  text-transform: uppercase;
+  font-family: 'Arial', sans-serif; /* Substitute with the actual font family if known */
+  -webkit-text-stroke: 0.5px white; /* Adjust the stroke width and color */
+  -webkit-background-clip: text; /* Apply background only to text */
+  background-clip: text; /* Apply background only to text */
+  background-color: transparent; /* Transparent background color */
+}
+
 .bgImage img {
   width: 440px;
   height: auto;
@@ -311,6 +396,7 @@ body::-webkit-scrollbar {
   height: 100vh;
   display: flex;
   /* flex-direction: column; */
+  padding: 96px;
   justify-content: center;
   align-items: center;
 }
@@ -405,9 +491,12 @@ body::-webkit-scrollbar {
   height: auto;
 }
 
-.marquee1,
-.marquee2 {
+.marquee1{
   margin-top: 200px;
+}
+
+.marquee2{
+  margin-top: 400px;
 }
 
 .marquee1 {

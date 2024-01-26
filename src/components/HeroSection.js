@@ -22,8 +22,8 @@ const HeroSection = ({ scrollToAbout }) => {
             </div>
 
             <div className="content">
-                <p className="name">MITESH SINGLA</p>
-                <p className='heading' >CRAFTING <span style={{ color: '#BB9CFF' }}>IMAGINATION</span> INTO DIGITAL EXPERIENCES</p>
+                <p className="name">LAKSHAY ARORA</p>
+                <p className='heading' >CRAFTING <span style={{ color: '#BB9CFF' }}>WEB WONDERS</span> AS A FULL STACK DEVELOPER</p>
             </div>
             <div className="hero_img">
                 <img src={img2} alt="MainImg" />
@@ -45,9 +45,9 @@ const SocialMedia = () => {
     return (
         <div className="social-media">
             <ul>
-                <li><a href="https://github.com/Miteshhsingla" target="_blank" rel='noreferrer'><img src={github} alt="icon" className="social-image" /></a></li>
-                <li><a href="https://www.instagram.com/ig_miteshh/" target="_blank" rel='noreferrer'><img src={instagram} alt="icon" className="social-image" /></a></li>
-                <li><a href="https://github.com/Miteshhsingla" target="_blank" rel='noreferrer'><img src={linkedin} href="https://www.linkedin.com/in/mitesh-singla-850989229/" alt="icon" className="social-image" /></a></li>
+                <li><a href="https://github.com/Lakshya6554" target="_blank" rel='noreferrer'><img src={github} alt="icon" className="social-image" /></a></li>
+                <li><a href="https://www.instagram.com/lakshay._.03/" target="_blank" rel='noreferrer'><img src={instagram} alt="icon" className="social-image" /></a></li>
+                <li><a href="https://www.linkedin.com/in/lakshay-arora-360b50228/" target="_blank" rel='noreferrer'><img src={linkedin} href="https://www.linkedin.com/in/mitesh-singla-850989229/" alt="icon" className="social-image" /></a></li>
                 <li><a href="https://twitter.com/MiteshhSingla" target="_blank" rel='noreferrer'><img src={twitter} alt="icon" className="social-image" /></a></li>
             </ul>
         </div>
