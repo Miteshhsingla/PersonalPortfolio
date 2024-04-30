@@ -2,7 +2,7 @@ import React from 'react';
 import '../index.css';
 
 import img from '../assets/bitmoji.svg';
-import img2 from '../assets/HeroImg.svg';
+import img2 from '../assets/bgimage.svg';
 import bottomImg from '../assets/bottomDesign.svg';
 import bottomArrow from '../assets/bottomArrow.svg';
 import github from '../assets/socialMediaIcons/ri_github-fill.svg';
