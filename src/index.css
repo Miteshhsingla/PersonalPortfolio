@@ -542,6 +542,7 @@ body::-webkit-scrollbar {
 
 /* CSS for Chat Interface */
 .chat-interface {
+
   position: relative;
   z-index: 1;
   font-family: 'ubuntu', 'sans-serif';
@@ -554,7 +555,8 @@ body::-webkit-scrollbar {
   bottom: 20px;
   right: 20px;
   border-radius: 8px;
-  width: 300px;
+  width: 350px;
+  height: 600px;
   background-color: #e2e2e2;
 }
 
@@ -575,6 +577,12 @@ body::-webkit-scrollbar {
 
 .chat-messages {
   padding: 10px;
+  overflow-y: auto;
+  /* Enable vertical scrollbar when content overflows */
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .message {
@@ -585,16 +593,20 @@ body::-webkit-scrollbar {
 }
 
 .message.system {
+  align-self: flex-start;
   background-color: #ffffff;
   border-radius: 0px 15px 15px 15px;
   text-align: left;
   color: #000;
+  width: fit-content;
 }
 
 .message.user {
-  background-color: #989173;
+  align-self: flex-end;
+  background-color: #BB9CFF;
   border-radius: 15px 15px 0px 15px;
   text-align: right;
+  width: fit-content;
 }
 
 .message.animated {
@@ -626,7 +638,7 @@ body::-webkit-scrollbar {
 .option {
   border-radius: 10px;
   padding: 10px;
-  background-color: #C3BEAB;
+  background-color: #bb9cff7f;
   width: fit-content;
   cursor: pointer;
   list-style: none;
@@ -635,7 +647,7 @@ body::-webkit-scrollbar {
 }
 
 .selected {
-  background-color: #989173;
+  background-color: #BB9CFF;
   color: #000000;
 }
 

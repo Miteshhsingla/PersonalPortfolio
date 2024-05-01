@@ -86,7 +86,7 @@ const App = () => {
 
           </div>
           <p className="AboutTitle">ABOUT ME</p>
-          <p className='aboutMeDescription1'>Hey there, I'm<span style={{ color: '#BB9CFF' }}> Mitesh</span>,<span className='degree'> an engineer by degree</span>, <span className='dev'>developer</span>, <span className='designer'>designer</span> and<span className='tea'> tea enthusiast</span>.</p>
+          <p className='aboutMeDescription1'>Hey there, I'm<span style={{ color: '#BB9CFF' }}> Mitesh</span>,<span className='degree'> an engineer by degree</span>, <span className='dev'>developer</span>, <span className='designer'>designer</span> and<span className='tea'> a tea lover</span>.</p>
           <p className='aboutMeDescription2'>I'm someone who’s always been interested in design and <span className='text'>development</span>. I believe for most of the products, both of these go hand in hand.Because of this enthusiasm towards tech & UX I have come across wide variety of technologies and projects, which I try to update here on this website.</p>
         </div>
         {/* <div >

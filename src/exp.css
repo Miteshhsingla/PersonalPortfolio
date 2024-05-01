@@ -128,6 +128,8 @@ body {
 }
 
 .ghub {
+  display: flex;
+  flex-direction: row;
   font-weight: 300;
   color: rgba(205, 205, 205, 1);
   font-size: 13px;

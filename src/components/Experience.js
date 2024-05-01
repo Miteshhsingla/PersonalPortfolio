@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import '../exp.css';
 import timeline from '../assets/timeline.svg'
 import playButton from '../assets/play.svg'
+import githublink from '../assets/link.svg'
 
 
 function App() {
@@ -16,8 +17,14 @@ function App() {
         nonactive.classList.toggle("active");
         active.classList.toggle('active');
         active.classList.toggle('nonactive');
+        setActiveTab(prevTab => (prevTab === 'Android' ? 'UI/UX' : 'Android'));
     };
+    const [activeTab, setActiveTab] = useState('Android');
 
+    // Added logic to handle tab change
+    // const handleActiveChange = () => {
+    //     setActiveTab(prevTab => (prevTab === 'Android' ? 'UI/UX' : 'Android'));
+    // };
     // Toggle play/pause functionality
     const handlePlayPause = () => {
         const audio = new Audio("/Users/miteshsingla/Documents/portfolio/public/audio.mp3");
@@ -87,43 +94,76 @@ function App() {
                                     <p className="UI streamcontent">UI/UX</p>
                                 </div>
                             </div>
+                            {activeTab === 'Android' && (
+                                <>
+                                    {/* Android projects */}
 
-                            <div className="project project1">
-                                <div className="projectcontent">
-                                    <p className="projectname">Gramio</p>
-                                    <p className="timing">Jan 2023</p>
-                                    <p className="ghub">
-                                        <i className="fa-solid fa-link"></i>Github Link
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="project project2">
-                                <div className="projectcontent">
-                                    <p className="projectname">Safety 101</p>
-                                    <p className="timing">December 2022</p>
-                                    <p className="ghub">
-                                        <i className="fa-solid fa-link"></i>Github Link
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="project project3">
-                                <div className="projectcontent">
-                                    <p className="projectname">Bookbits</p>
-                                    <p className="timing">March 2023</p>
-                                    <p className="ghub">
-                                        <i className="fa-solid fa-link"></i>Github Link
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="project project4">
-                                <div className="projectcontent">
-                                    <p className="projectname">User Authentication JWT Api</p>
-                                    <p className="timing">April 2023</p>
-                                    <p className="ghub">
-                                        <i className="fa-solid fa-link"></i>Github Link
-                                    </p>
-                                </div>
-                            </div>
+
+
+                                    <div className="project project1">
+                                        <div className="projectcontent">
+                                            <p className="projectname">Gramio</p>
+                                            <p className="timing">Jan 202</p>
+                                            <p className="ghub">
+                                                <img src={githublink} className="fa-solid fa-link"></img>Github Link
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div className="project project2">
+                                        <div className="projectcontent">
+                                            <p className="projectname">Safety 101</p>
+                                            <p className="timing">December 2022</p>
+                                            <p className="ghub">
+                                                <img src={githublink} className="fa-solid fa-link"></img>Github Link
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div className="project project3">
+                                        <div className="projectcontent">
+                                            <p className="projectname">Bookbits</p>
+                                            <p className="timing">March 2023</p>
+                                            <p className="ghub">
+                                                <img src={githublink} className="fa-solid fa-link"></img>Github Link
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div className="project project4">
+                                        <div className="projectcontent">
+                                            <p className="projectname">User Authentication JWT Api</p>
+                                            <p className="timing">April 2023</p>
+                                            <p className="ghub">
+                                                <img src={githublink} className="fa-solid fa-link"></img>Github Link
+                                            </p>
+                                        </div>
+                                    </div>
+                                </>
+                            )}
+                            {activeTab === 'UI/UX' && (
+                                <>
+                                    {/* UI/UX projects */}
+
+                                    <div className="project project3">
+                                        <div className="projectcontent">
+                                            <p className="projectname">Demlo.ai</p>
+                                            <p className="timing">June 2023</p>
+                                            <p className="ghub">
+                                                <img src={githublink} className="fa-solid fa-link"></img>Github Link
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div className="project project4">
+                                        <div className="projectcontent">
+                                            <p className="projectname">Instagram Portfolio</p>
+                                            <p className="timing">April 2023</p>
+                                            <p className="ghub">
+                                                <img src={githublink} className="fa-solid fa-link"></img>Link
+                                            </p>
+                                        </div>
+                                    </div>
+                                </>
+                            )}
+
                         </div>
                         <div className="item item2">
                             <div className="border">

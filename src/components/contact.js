@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import img from '../assets/bitmoji.svg';
 import cross from '../assets/cross.svg';
 
@@ -7,6 +7,8 @@ const Contact = () => {
     const [displayHi, setDisplayHi] = useState(false);
     const [selectedOption, setSelectedOption] = useState('');
     const [chatMessages, setChatMessages] = useState([]);
+    const chatMessagesRef = useRef(null); // Ref for chat messages container
+
     const options = ['Just saying Hi', 'Download Resume', 'Contact Me'];
 
     useEffect(() => {
@@ -24,7 +26,7 @@ const Contact = () => {
                     }
                 ]);
                 setDisplayHi(true);
-            }, 1000);
+            }, 0);
         }
     }, [isOpen, chatMessages, displayHi]);
 
@@ -64,6 +66,12 @@ const Contact = () => {
 
         setSelectedOption(option);
     };
+
+    useEffect(() => {
+        if (chatMessagesRef.current) {
+            chatMessagesRef.current.scrollTop = chatMessagesRef.current.scrollHeight;
+        }
+    }, [chatMessages]);
 
     return (
         <div className="chat-interface">
