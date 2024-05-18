@@ -1,0 +1,45 @@
+.footersection {
+    width: 50vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.text-content {
+    max-width: auto;
+}
+
+.title {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.action-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.action-button:hover {
+    background-color: #0056b3;
+}
+
+.image-content {
+    max-width: auto;
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+}

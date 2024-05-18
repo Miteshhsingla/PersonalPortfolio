@@ -16,10 +16,9 @@ const HeroSection = ({ scrollToAbout }) => {
 
 
     return (
+
         <div className="hero-section">
-            <div className="icon-image">
-                <img src={img} alt="icon" />
-            </div>
+           
 
             <div className="content">
                 <p className="name">MITESH SINGLA</p>

@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import img from '../assets/bitmoji.svg';
 import cross from '../assets/cross.svg';
+import cross_hover from '../assets/cross_hover.svg'
 
 const Contact = () => {
     const [isOpen, setIsOpen] = useState(true);
@@ -9,7 +10,7 @@ const Contact = () => {
     const [chatMessages, setChatMessages] = useState([]);
     const chatMessagesRef = useRef(null); // Ref for chat messages container
 
-    const options = ['Just saying Hi', 'Download Resume', 'Contact Me'];
+    const options = ['Just saying Hi', 'Contact Me', 'Download Resume'];
 
     useEffect(() => {
         if (isOpen && !displayHi) {
@@ -51,10 +52,10 @@ const Contact = () => {
             ]);
         }
         else if (option === 'Download Resume') {
-            // const link = document.createElement('a');
-            // link.href = resumePDF;
-            // link.download = 'Mitesh_Singla_Resume.pdf';
-            // link.click();
+            const link = document.createElement('a');
+            link.href = 'src/assets/resume.pdf';
+            link.download = 'Mitesh_Singla_Resume.pdf';
+            link.click();
         }
         else if (option === 'Close') {
             // Close the chat interface
@@ -73,6 +74,9 @@ const Contact = () => {
         }
     }, [chatMessages]);
 
+    const [isCrossHovered, setIsCrossHovered] = useState(false);
+
+
     return (
         <div className="chat-interface">
             {isOpen && (
@@ -86,9 +90,15 @@ const Contact = () => {
                             />
                             <text>Mitesh Singla</text>
                         </div>
-                        <span className="close-button" onClick={() => handleOptionClick('Close')}>
+                        <span
+                            className="close-button"
+                            onClick={() => handleOptionClick('Close')}
+                            onMouseEnter={() => setIsCrossHovered(true)}
+                            onMouseLeave={() => setIsCrossHovered(false)}
+                        >
                             <img
-                                src={cross}
+                                // src={isCrossHovered ? cross_hover : cross}
+                                src={cross_hover}
                                 alt="Back"
                                 className="back"
                             />
