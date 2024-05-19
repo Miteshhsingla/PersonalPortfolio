@@ -349,7 +349,7 @@ body::-webkit-scrollbar {
   }
 
   .aboutsection {
-    height: fit-content;
+    height: auto;
   }
 
   .navbar ul {
@@ -402,6 +402,13 @@ body::-webkit-scrollbar {
     visibility: hidden;
   }
 
+  .aboutMeDescription1 {
+    font-size: 1rem;
+  }
+
+  .aboutMeDescription2 {
+    font-size: 1rem;
+  }
 
   .hero_img {
     margin-top: 50px;
