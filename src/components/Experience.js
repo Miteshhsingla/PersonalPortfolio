@@ -166,9 +166,9 @@ function App() {
 
                         </div>
                         <div className="item item2">
-                            <div className="border">
+                            {/* <div className="border">
                                 <div className="square"></div>
-                            </div>
+                            </div> */}
                         </div>
                         <div className="item item3">
                             <p className="workexperience">Work Experience</p>

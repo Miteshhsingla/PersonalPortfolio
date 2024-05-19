@@ -109,7 +109,9 @@ const App = () => {
       <div>
         <ExperienceSection />
       </div>
-
+<div>
+  <Footer/>
+</div>
     </div>
 
   );
