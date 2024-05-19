@@ -76,3 +76,13 @@
 .image-content img {
     transform: scale(00.9);
 }
+
+@media (max-width: 768px) {
+    .footeruni {
+        width: 100%;
+    }
+
+    .image-content img {
+        transform: scale(0.5);
+    }
+}

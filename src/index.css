@@ -340,6 +340,10 @@ body::-webkit-scrollbar {
 }
 
 @media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+
   .navbar ul {
     margin-top: 20px;
     /* Adjust margin for mobile */
@@ -352,6 +356,18 @@ body::-webkit-scrollbar {
     /* Adjust padding for mobile */
   }
 
+  .bgImage {
+    transform: scale(0.6);
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+
+  .planetimg {
+    visibility: hidden;
+  }
+
   .content {
     max-width: 80%;
     /* Adjust max-width for mobile */
@@ -360,6 +376,22 @@ body::-webkit-scrollbar {
     margin-top: 80px;
     /* Adjust margin for mobile */
   }
+
+  .hero-section {
+    background-position: center;
+    background-image: url('./assets/bgimage.svg');
+    background-repeat: no-repeat;
+    background-size: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+  }
+
+  .div-design {
+    transform: scale(0.6);
+  }
+
 
   .hero_img {
     margin-top: 50px;
@@ -376,12 +408,6 @@ body::-webkit-scrollbar {
     /* Adjust margin for mobile */
   }
 
-  .aboutsection {
-    margin-left: 20px;
-    /* Adjust margin for mobile */
-    width: 80%;
-    /* Adjust width for mobile */
-  }
 
   .hero-section {
     display: flex;
