@@ -68,9 +68,9 @@ const App = () => {
 
   return (
     <div>
+      <Navbar scrollToAbout={() => scrollToSection(aboutRef)} />
       <div className="container">
         <Cursor />
-        <Navbar scrollToAbout={() => scrollToSection(aboutRef)} />
         <HeroSection scrollToAbout={() => scrollToSection(aboutRef)} />
       </div>
 
@@ -109,9 +109,9 @@ const App = () => {
       <div>
         <ExperienceSection />
       </div>
-<div>
-  <Footer/>
-</div>
+      <div>
+        <Footer />
+      </div>
     </div>
 
   );
