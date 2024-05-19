@@ -340,8 +340,16 @@ body::-webkit-scrollbar {
 }
 
 @media (max-width: 768px) {
+  .body {
+    overflow-x: hidden;
+  }
+
   .container {
     width: 100%;
+  }
+
+  .aboutsection {
+    height: fit-content;
   }
 
   .navbar ul {
@@ -358,6 +366,7 @@ body::-webkit-scrollbar {
 
   .bgImage {
     transform: scale(0.6);
+    visibility: collapse;
   }
 
   .heading {
@@ -390,6 +399,7 @@ body::-webkit-scrollbar {
 
   .div-design {
     transform: scale(0.6);
+    visibility: hidden;
   }
 
 
@@ -405,6 +415,8 @@ body::-webkit-scrollbar {
 
   .social-media {
     margin-left: 20px;
+    position: relative;
+
     /* Adjust margin for mobile */
   }
 
