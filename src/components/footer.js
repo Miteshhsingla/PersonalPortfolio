@@ -11,10 +11,10 @@ const Footer = () => {
                 <div className="text-content">
                     <div className='title'>
                         <h1>Let's Connect</h1>
-                        <img src={stars2} alt="Stars" />
+                        <img className='starimg' src={stars2} alt="Stars" />
                     </div>
-                    <p className="subtitle">Get in Touch with me to discuss more about tech, design and food too 👀</p>
-                    <button className="action-button">Hit me up</button>
+                    <p className="subtitle2">Hit me up if you've got something new about tech, design or probably food too 👀</p>
+                    <button className="action-button">Get in Touch</button>
                 </div>
                 <div className="image-content">
                     <img src={img} alt="Description" />
