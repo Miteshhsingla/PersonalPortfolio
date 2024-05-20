@@ -1,6 +1,5 @@
 import React, { useRef, useEffect, useState } from 'react';
 import './index.css';
-
 import img4 from './assets/a.png';
 import img3 from './assets/scrolltotop.svg';
 import Cursor from "./components/cursor";
@@ -13,6 +12,8 @@ import test from './assets/progothon.png'
 import Footer from './components/footer';
 import ExperienceSection from './components/Experience';
 import star from './assets/star.svg'
+
+
 
 const App = () => {
   window.onscroll = function () {
@@ -67,6 +68,7 @@ const App = () => {
 
 
   return (
+
     <div>
       <Navbar scrollToAbout={() => scrollToSection(aboutRef)} />
       <div className="container">

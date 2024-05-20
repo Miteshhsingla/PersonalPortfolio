@@ -43,7 +43,6 @@ const Contact = () => {
 
             ]);
         } else if (option === 'Contact Me') {
-            // Display "Let's connect" message and provide your email
             setChatMessages([
                 ...chatMessages,
                 { text: "Let's connect", isUser: true },

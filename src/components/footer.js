@@ -1,9 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './ImageTextSection.css';
 import stars2 from '../assets/stars.svg';
 import img from "../assets/footerimg.svg";
+import EmailPopup from './emailPopup';
 
 const Footer = () => {
+    const [isPopupOpen, setIsPopupOpen] = useState(false);
+    const handleButtonClick = (option) => {
+        if (option === 'Compose Email') {
+            setIsPopupOpen(true);
+        }
+    };
+
     return (
         <div className='footeruni'>
 
@@ -14,7 +22,8 @@ const Footer = () => {
                         <img className='starimg' src={stars2} alt="Stars" />
                     </div>
                     <p className="subtitle2">Hit me up if you've got something new about tech, design or probably food too 👀</p>
-                    <button className="action-button">Get in Touch</button>
+                    <button className="action-button" onClick={() => handleButtonClick('Compose Email')}>Get in Touch</button>
+                    <EmailPopup show={isPopupOpen} onClose={() => setIsPopupOpen(false)} />
                 </div>
                 <div className="image-content">
                     <img src={img} alt="Description" />
