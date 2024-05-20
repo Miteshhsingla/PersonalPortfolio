@@ -52,10 +52,8 @@ const Contact = () => {
             ]);
         }
         else if (option === 'Download Resume') {
-            const link = document.createElement('a');
-            link.href = 'src/assets/resume.pdf';
-            link.download = 'Mitesh_Singla_Resume.pdf';
-            link.click();
+            const url = 'https://drive.google.com/file/d/1f5I0-v1aEGyeUcbWq3rT_VokUS3Ff_2h/view?usp=sharing'; // Replace with your desired URL
+    window.open(url, '_blank'); // This 
         }
         else if (option === 'Close') {
             // Close the chat interface

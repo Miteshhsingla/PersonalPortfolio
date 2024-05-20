@@ -340,9 +340,20 @@ body::-webkit-scrollbar {
 }
 
 @media (max-width: 768px) {
-  .body {
+  body {
     overflow-x: hidden;
   }
+
+
+
+  .marquee1 {
+    width: 100%;
+  }
+
+  .marquee2 {
+    width: 100%;
+  }
+
 
   .container {
     width: 100%;
