@@ -80,7 +80,7 @@ function App() {
                 <link rel="stylesheet" href="index.css" />
             </head>
             <body>
-                <div className="sectione">
+                <div id="projects" className="sectione">
                     <div className="containere">
                         <div className="item item1">
                             <div className="item1container">
